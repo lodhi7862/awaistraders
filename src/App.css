@@ -1,0 +1,14 @@
+/* ===== APP WRAPPER ===== */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app > section {
+  flex-shrink: 0;
+}
+
+.app > footer {
+  margin-top: auto;
+}

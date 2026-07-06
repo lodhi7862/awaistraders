@@ -1,0 +1,152 @@
+/* ===== CEO MESSAGE SECTION ===== */
+.ceo {
+  background-color: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.ceo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.ceo-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* CEO Photo */
+.ceo-photo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ceo-photo-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 5px;
+  background: var(--gold-gradient);
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+}
+
+.ceo-photo-frame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--bg-primary);
+}
+
+/* Gold decorative dot below photo */
+.ceo-photo-accent {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+/* Text side */
+.ceo-text {
+  position: relative;
+}
+
+.ceo-quote-mark {
+  font-family: var(--font-heading);
+  font-size: 6rem;
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.2;
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.ceo-text h2 {
+  margin-bottom: 8px;
+}
+
+.ceo-message {
+  font-size: 1.02rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  font-style: italic;
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.ceo-signature {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ceo-name {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.ceo-title {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ceo-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .ceo-photo-frame {
+    width: 240px;
+    height: 240px;
+  }
+
+  .ceo-quote-mark {
+    position: static;
+    display: block;
+    margin-bottom: -30px;
+  }
+
+  .ceo-message {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .ceo-signature {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ceo-photo-frame {
+    width: 200px;
+    height: 200px;
+  }
+}
