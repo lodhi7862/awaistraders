@@ -36,6 +36,21 @@
   letter-spacing: 1px;
   cursor: pointer;
   transition: text-shadow var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo-img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: transform var(--transition-fast);
+}
+
+.navbar-logo:hover .navbar-logo-img {
+  transform: scale(1.05);
 }
 
 .navbar-logo:hover {

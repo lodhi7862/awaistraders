@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import CeoMessage from './components/CeoMessage';
+import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
@@ -20,6 +21,7 @@ export default function App() {
         <Hero />
         <About />
         <CeoMessage />
+        <Gallery />
         <Contact />
       </main>
       <Footer />

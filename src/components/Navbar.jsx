@@ -6,6 +6,7 @@ const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'CEO Message', href: '#ceo' },
+  { label: 'Gallery', href: '#gallery' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -56,6 +57,11 @@ export default function Navbar() {
           onClick={(e) => handleLinkClick(e, '#home')}
           aria-label="Awais Traders - Home"
         >
+          <img
+            src="/logo.png"
+            alt="Awais Traders Logo"
+            className="navbar-logo-img"
+          />
           Awais Traders
         </a>
 
