@@ -55,7 +55,16 @@ export default function Footer() {
 
             {/* Brand Column */}
             <motion.div className="footer-brand" variants={fadeUp}>
-              <span className="footer-logo">Awais Traders</span>
+              <span className="footer-logo">
+                <span className="footer-logo-box">
+                  <img
+                    src="/logo.png"
+                    alt="Awais Traders logo"
+                    className="footer-logo-img"
+                  />
+                </span>
+                Awais Traders
+              </span>
               <p>
                 A trusted name in men&apos;s garment manufacturing and wholesale
                 supply. Delivering premium quality, precision tailoring, and

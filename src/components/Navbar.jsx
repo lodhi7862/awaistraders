@@ -57,11 +57,13 @@ export default function Navbar() {
           onClick={(e) => handleLinkClick(e, '#home')}
           aria-label="Awais Traders - Home"
         >
-          <img
-            src="/logo.png"
-            alt="Awais Traders Logo"
-            className="navbar-logo-img"
-          />
+          <span className="navbar-logo-box">
+            <img
+              src="/logo.png"
+              alt="Awais Traders Logo"
+              // className="navbar-logo-img"
+            />
+          </span>
           Awais Traders
         </a>
 

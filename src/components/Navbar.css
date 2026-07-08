@@ -5,12 +5,12 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 20px 0;
+  padding: 2px 0;
   transition: all var(--transition-medium);
 }
 
 .navbar.scrolled {
-  padding: 12px 0;
+  padding: 4px 0;
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 72px;
 }
 
 /* Logo */
@@ -38,19 +39,34 @@
   transition: text-shadow var(--transition-fast);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 
-.navbar-logo-img {
-  width: 54px;
-  height: 54px;
-  object-fit: contain;
-  border-radius: 6px;
+.navbar-logo-box {
+  width: 100px;
+  height: 150px;
+  border: none;
+  box-shadow: none;
   transition: transform var(--transition-fast);
+}
+
+/* .navbar-logo-img {
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.55);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.85);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+} */
+
+.navbar-logo:hover .navbar-logo-box {
+  transform: scale(1.03);
 }
 
 .navbar-logo:hover .navbar-logo-img {
   transform: scale(1.05);
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.9);
 }
 
 .navbar-logo:hover {
