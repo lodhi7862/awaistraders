@@ -221,6 +221,10 @@ a.footer-contact-value:hover {
   color: var(--gold);
 }
 
+.footer-address-value {
+  line-height: 1.5;
+}
+
 /* === BOTTOM BAR === */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.06);

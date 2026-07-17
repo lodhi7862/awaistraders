@@ -25,9 +25,9 @@
 
 .contact-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -89,6 +89,20 @@
   letter-spacing: 1px;
 }
 
+.contact-card-address {
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  line-height: 1.5;
+}
+
+.contact-card--static {
+  cursor: default;
+}
+
+.contact-card--static:hover {
+  color: inherit;
+}
+
 /* WhatsApp buttons */
 .contact-whatsapp {
   display: flex;
@@ -128,7 +142,6 @@
 /* Responsive */
 @media (max-width: 600px) {
   .contact-cards {
-    grid-template-columns: 1fr;
     gap: 20px;
   }
 
